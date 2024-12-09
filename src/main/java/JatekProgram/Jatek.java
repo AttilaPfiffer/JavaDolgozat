@@ -3,6 +3,11 @@ package JatekProgram;
 public abstract class Jatek{
     private static int jatekDb = 0;
 
+
+    public Jatek(int jatekDb) {
+        this.jatekDb = jatekDb + 1;
+    }
+
     public static int getJatekDb() {
         return jatekDb;
     }
@@ -16,6 +21,7 @@ public abstract class Jatek{
     }
 
     public void vege() {
+
 
     }
 }

@@ -8,11 +8,13 @@ public class LogikaiJatek extends Jatek {
     private int babuDb;
 
     public LogikaiJatek() {
+        super(3);
         this.tabla = new Babu[4][5];
         this.sorrend = new int[10];
     }
 
     public LogikaiJatek(int babuDb) {
+        super(3);
         this.babuDb = babuDb;
     }
 
@@ -22,14 +24,17 @@ public class LogikaiJatek extends Jatek {
 
     public void kezd() {
         this.babuDb = 3;
+        System.out.println("Kezdés");
     }
 
     public void ment() {
+        System.out.println("Mentés");
 
     }
 
     public void vege() {
         this.babuDb = 10;
+        System.out.println("Vége");
     }
 
     @Override
