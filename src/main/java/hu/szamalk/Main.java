@@ -1,9 +1,16 @@
 package hu.szamalk;
 
+import model.Tabla;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        feladat();
+    }
 
+    private static void feladat() {
+        Tabla tabla = new Tabla('#');
+        tabla.megjelenit();
     }
 }
